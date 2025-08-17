@@ -1,0 +1,145 @@
+1. Selectors & Specificity
+<div id="main" class="box">
+  <p>Hello CSS</p>
+</div>
+
+<style>
+p { color: blue; }        /* element selector */
+.box p { color: green; }  /* class + descendant */
+#main p { color: red; }   /* id selector wins */
+</style>
+
+2. Box Model
+<div class="box">Box</div>
+
+<style>
+.box {
+  width: 200px;
+  padding: 20px;
+  border: 5px solid black;
+  margin: 30px;
+  background: lightblue;
+  box-sizing: border-box; /* Try removing this */
+}
+</style>
+
+3. Positioning
+<div class="parent">
+  <div class="child">Absolute</div>
+</div>
+
+<style>
+.parent {
+  width: 300px; height: 200px;
+  background: lightgray;
+  position: relative;
+}
+.child {
+  position: absolute;
+  top: 50px; left: 50px;
+  background: pink; padding: 10px;
+}
+</style>
+
+4. Display & Layout (Flexbox)
+<div class="container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+</div>
+
+<style>
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  background: lightyellow;
+}
+.container div {
+  background: orange;
+  padding: 10px;
+}
+</style>
+
+5. Colors, Fonts, and Text
+<p class="styled-text">Beautiful text styling</p>
+
+<style>
+.styled-text {
+  color: #3498db;
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+}
+</style>
+
+6. Backgrounds & Borders
+<div class="card">Hello</div>
+
+<style>
+.card {
+  width: 200px; height: 100px;
+  background: url('https://via.placeholder.com/200') no-repeat center/cover;
+  border: 3px solid #333;
+  border-radius: 15px;
+}
+</style>
+
+7. Units & Measurements
+<div class="box">Resize the screen</div>
+
+<style>
+.box {
+  width: 50%;    /* relative to parent */
+  font-size: 2rem; /* relative to root font size */
+  background: lightcoral;
+}
+</style>
+
+8. Responsive Basics
+<div class="responsive">Resize window</div>
+
+<style>
+.responsive {
+  background: lightgreen;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+@media (max-width: 600px) {
+  .responsive { background: lightblue; }
+}
+</style>
+
+9. Transitions & Hover Effects
+<button class="btn">Hover me</button>
+
+<style>
+.btn {
+  background: tomato;
+  color: white;
+  padding: 10px 20px;
+  transition: background 0.3s ease;
+}
+.btn:hover {
+  background: darkred;
+}
+</style>
+
+10. Inheritance & Cascading
+<div class="parent">
+  <p>This text is inherited</p>
+</div>
+
+<style>
+.parent {
+  color: purple;
+  font-size: 20px;
+}
+p {
+  color: inherit; /* inherits parent's color */
+}
+</style>
