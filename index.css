@@ -1,0 +1,53 @@
+html, body{
+    
+            height: 100%;
+            margin: 0; /* Remove default margin */
+            /* padding: 0; */
+            /* background-color: lightcyan; */
+            display: flex;
+            flex-direction: column;
+        }
+.header {
+    background-color: rgb(22, 75, 93);
+    width: 100vw;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 5px; */
+}
+.middle-div {
+    background-color: lightsalmon;
+    width: 100%;
+    flex:1;
+    overflow-y: auto;
+}
+.bottom-div {
+    background-color: blue;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.input_box {
+    background-color: white;
+    width: 80%;
+    height: 30%;
+    align-items: flex-start;
+}
+.send_button {
+    background-color: lightgreen;
+    width: 10%;
+    height: 30%;
+    margin-left: 10px;
+    border: black 1px solid;
+    align-items: flex-end;
+
+}
+.send_button:hover {
+    background-color: darkorange;
+    color: white;
+}
