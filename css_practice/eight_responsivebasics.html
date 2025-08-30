@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Basics</title>
+    <style>
+        .responsive {
+            width: 100%;
+            height: 100%;
+            background-color: lightcoral;
+        }
+        /* for screen that is 600px width, it shows lightblue as background color */
+        @media (max-width: 600px) {
+            .responsive {
+                background-color: lightblue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="responsive">
+        Resize window
+    </div>
+</body>
+</html>
